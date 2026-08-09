@@ -1,0 +1,162 @@
+<svg viewBox='0 0 1440 920' xmlns='http://www.w3.org/2000/svg'>
+<rect x='0' y='0' width='1440' height='920' fill='#F7F9FC'/>
+<defs>
+<marker id='arrHead' viewBox='0 0 10 10' refX='8' refY='5'
+        markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+        <path d='M0,0 L10,5 L0,10 z' fill='#475569'/></marker>
+<marker id='arrHeadBlue' viewBox='0 0 10 10' refX='8' refY='5'
+        markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+        <path d='M0,0 L10,5 L0,10 z' fill='#2563EB'/></marker>
+</defs>
+<text x='720.0' y='46' font-family='Helvetica, Arial, sans-serif' font-size='27' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>Secure IoT Telemetry Pipeline</text>
+<text x='720.0' y='70' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='400' font-style='normal' fill='#64748B' text-anchor='middle'>AES-256-GCM Authenticated Encryption  ·  Device-to-Cloud Data Flow</text>
+<rect x='43' y='123' width='260' height='610' rx='18' fill='#0F172A' opacity='0.06'/>
+<rect x='40' y='118' width='260' height='610' rx='18' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1.4' />
+<rect x='62' y='136' width='216' height='6' rx='3' fill='#16A34A' />
+<g><line x1='188.734' y1='179.7176' x2='200.566' y2='179.7176' stroke='#16A34A' stroke-width='2.4'/><line x1='188.734' y1='188' x2='200.566' y2='188' stroke='#16A34A' stroke-width='2.4'/><line x1='188.734' y1='196.2824' x2='200.566' y2='196.2824' stroke='#16A34A' stroke-width='2.4'/><line x1='161.7176' y1='206.734' x2='161.7176' y2='218.566' stroke='#16A34A' stroke-width='2.4'/><line x1='170.0' y1='206.734' x2='170.0' y2='218.566' stroke='#16A34A' stroke-width='2.4'/><line x1='178.2824' y1='206.734' x2='178.2824' y2='218.566' stroke='#16A34A' stroke-width='2.4'/><line x1='151.266' y1='179.7176' x2='139.434' y2='179.7176' stroke='#16A34A' stroke-width='2.4'/><line x1='151.266' y1='188' x2='139.434' y2='188' stroke='#16A34A' stroke-width='2.4'/><line x1='151.266' y1='196.2824' x2='139.434' y2='196.2824' stroke='#16A34A' stroke-width='2.4'/><line x1='161.7176' y1='169.266' x2='161.7176' y2='157.434' stroke='#16A34A' stroke-width='2.4'/><line x1='170.0' y1='169.266' x2='170.0' y2='157.434' stroke='#16A34A' stroke-width='2.4'/><line x1='178.2824' y1='169.266' x2='178.2824' y2='157.434' stroke='#16A34A' stroke-width='2.4'/><rect x='150.28' y='168.28' width='39.440000000000005' height='39.440000000000005' rx='5' fill='#FFFFFF' stroke='#16A34A' stroke-width='2.6'/><rect x='161.7176' y='179.7176' width='16.5648' height='16.5648' rx='2' fill='#16A34A' opacity='0.85'/></g>
+<text x='170.0' y='244' font-family='Helvetica, Arial, sans-serif' font-size='17.5' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>Edge Device</text>
+<text x='170.0' y='263' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='400' font-style='normal' fill='#64748B' text-anchor='middle'>ESP32 · Arduino Core</text>
+<line x1='62' y1='280' x2='278' y2='280' stroke='#E2E8F0' stroke-width='1.2'/>
+<circle cx='66' cy='309' r='2.5' fill='#475569'/>
+<text x='78' y='313.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Reads temperature, humidity</text>
+<text x='78' y='329.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>and pressure — DHT22 + BMP085</text>
+<circle cx='66' cy='352.0' r='2.5' fill='#475569'/>
+<text x='78' y='356.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Syncs clock via NTP for</text>
+<text x='78' y='372.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>consistent timestamps</text>
+<circle cx='66' cy='395.0' r='2.5' fill='#475569'/>
+<text x='78' y='399.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Assembles JSON: device_id,</text>
+<text x='78' y='415.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>timestamp, sensor readings</text>
+<circle cx='66' cy='438.0' r='2.5' fill='#475569'/>
+<text x='78' y='442.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Encrypts with AES-256-GCM,</text>
+<text x='78' y='458.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>fresh random 12-byte IV</text>
+<rect x='58' y='636' width='224' height='76' rx='10' fill='#ECFDF5' stroke='#BBF7D0' stroke-width='1.2' />
+<text x='170.0' y='663.0' font-family='Helvetica, Arial, sans-serif' font-size='11.8' font-weight='700' font-style='normal' fill='#16A34A' text-anchor='middle'>iv · ciphertext · tag  (hex)</text>
+<text x='170.0' y='678.0' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#475569' text-anchor='middle'>device_id lives only inside</text>
+<text x='170.0' y='693.0' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#475569' text-anchor='middle'>the ciphertext</text>
+<rect x='383' y='123' width='200' height='610' rx='18' fill='#0F172A' opacity='0.06'/>
+<rect x='380' y='118' width='200' height='610' rx='18' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1.4' />
+<rect x='402' y='136' width='156' height='6' rx='3' fill='#7C3AED' />
+<path d='M458.25,170.02 L501.75,170.02 L486.38,205.98000000000002 L473.62,205.98000000000002 Z' fill='#FFFFFF' stroke='#7C3AED' stroke-width='2.6' stroke-linejoin='round'/>
+<circle cx='466.08' cy='164.02' r='4' fill='#7C3AED'/>
+<line x1='466.08' y1='168.02' x2='476.1024' y2='189.798' stroke='#7C3AED' stroke-width='1.6' opacity='0.55'/>
+<circle cx='480.0' cy='164.02' r='4' fill='#7C3AED'/>
+<line x1='480.0' y1='168.02' x2='480.0' y2='189.798' stroke='#7C3AED' stroke-width='1.6' opacity='0.55'/>
+<circle cx='493.92' cy='164.02' r='4' fill='#7C3AED'/>
+<line x1='493.92' y1='168.02' x2='483.8976' y2='189.798' stroke='#7C3AED' stroke-width='1.6' opacity='0.55'/>
+<line x1='480.0' y1='205.98000000000002' x2='480.0' y2='215.98000000000002' stroke='#7C3AED' stroke-width='2.6'/>
+<text x='480.0' y='244' font-family='Helvetica, Arial, sans-serif' font-size='17.5' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>Reverse Proxy</text>
+<text x='480.0' y='263' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='400' font-style='normal' fill='#64748B' text-anchor='middle'>Nginx  ·  listen :80</text>
+<line x1='402' y1='280' x2='558' y2='280' stroke='#E2E8F0' stroke-width='1.2'/>
+<circle cx='406' cy='309' r='2.5' fill='#475569'/>
+<text x='418' y='313.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Single public</text>
+<text x='418' y='329.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>ingress point</text>
+<circle cx='406' cy='352.0' r='2.5' fill='#475569'/>
+<text x='418' y='356.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Hides app port</text>
+<text x='418' y='372.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>9050 from clients</text>
+<circle cx='406' cy='395.0' r='2.5' fill='#475569'/>
+<text x='418' y='399.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>proxy_pass →</text>
+<text x='418' y='415.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>127.0.0.1:9050</text>
+<circle cx='406' cy='438.0' r='2.5' fill='#475569'/>
+<text x='418' y='442.0' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>Forwards X-Forwarded-For</text>
+<text x='418' y='458.5' font-family='Helvetica, Arial, sans-serif' font-size='12.3' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>and X-Real-IP</text>
+<rect x='398' y='636' width='164' height='76' rx='10' fill='#F5F3FF' stroke='#DDD6FE' stroke-width='1.2' />
+<text x='480.0' y='663.0' font-family='Helvetica, Arial, sans-serif' font-size='11.8' font-weight='700' font-style='normal' fill='#7C3AED' text-anchor='middle'>Port 80 → 9050</text>
+<text x='480.0' y='678.0' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#475569' text-anchor='middle'>the only path into</text>
+<text x='480.0' y='693.0' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#475569' text-anchor='middle'>the application</text>
+<rect x='663' y='123' width='420' height='610' rx='18' fill='#0F172A' opacity='0.06'/>
+<rect x='660' y='118' width='420' height='610' rx='18' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1.4' />
+<rect x='682' y='136' width='376' height='6' rx='3' fill='#2563EB' />
+<rect x='849.84' y='157.84' width='40.32' height='13.44' rx='5' fill='#2563EB' stroke='#2563EB' stroke-width='2.2' opacity='0.9'/>
+<rect x='849.84' y='177.28' width='40.32' height='13.44' rx='5' fill='#FFFFFF' stroke='#2563EB' stroke-width='2.2' opacity='1'/>
+<rect x='849.84' y='196.72' width='40.32' height='13.44' rx='5' fill='#FFFFFF' stroke='#2563EB' stroke-width='2.2' opacity='1'/>
+<circle cx='888.16' cy='157.84' r='5' fill='#2563EB'/>
+<text x='870.0' y='244' font-family='Helvetica, Arial, sans-serif' font-size='17.5' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>Application Layer</text>
+<text x='870.0' y='263' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='400' font-style='normal' fill='#64748B' text-anchor='middle'>FastAPI · Uvicorn · Docker (non-root)</text>
+<line x1='682' y1='280' x2='1058' y2='280' stroke='#E2E8F0' stroke-width='1.2'/>
+<rect x='684' y='294' width='372' height='88' rx='12' fill='#EFF6FF' stroke='#BFDBFE' stroke-width='1.2' />
+<circle cx='714' cy='338.0' r='13' fill='#2563EB'/>
+<text x='714' y='342.5' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='700' font-style='normal' fill='#FFFFFF' text-anchor='middle'>1</text>
+<text x='740' y='322' font-family='Helvetica, Arial, sans-serif' font-size='12.8' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='start'>Rate Limiter</text>
+<text x='740' y='341' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>30 requests / min per client IP</text>
+<text x='740' y='356' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>(read from X-Forwarded-For)</text>
+<line x1='870.0' y1='383' x2='870.0' y2='390' stroke='#2563EB' stroke-width='1.8' marker-end='url(#arrHeadBlue)'/>
+<rect x='684' y='391' width='372' height='88' rx='12' fill='#EFF6FF' stroke='#BFDBFE' stroke-width='1.2' />
+<circle cx='714' cy='435.0' r='13' fill='#2563EB'/>
+<text x='714' y='439.5' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='700' font-style='normal' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='740' y='419' font-family='Helvetica, Arial, sans-serif' font-size='12.8' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='start'>AES-GCM Decrypt &amp; Authenticate</text>
+<text x='740' y='438' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>Verifies the 16-byte GCM tag —</text>
+<text x='740' y='453' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>tampering makes decryption fail</text>
+<line x1='870.0' y1='480' x2='870.0' y2='487' stroke='#2563EB' stroke-width='1.8' marker-end='url(#arrHeadBlue)'/>
+<rect x='684' y='488' width='372' height='88' rx='12' fill='#EFF6FF' stroke='#BFDBFE' stroke-width='1.2' />
+<circle cx='714' cy='532.0' r='13' fill='#2563EB'/>
+<text x='714' y='536.5' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='700' font-style='normal' fill='#FFFFFF' text-anchor='middle'>3</text>
+<text x='740' y='516' font-family='Helvetica, Arial, sans-serif' font-size='12.8' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='start'>Device Authorization</text>
+<text x='740' y='535' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>Decrypted device_id checked against</text>
+<text x='740' y='550' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>the devices table (must be active)</text>
+<line x1='870.0' y1='577' x2='870.0' y2='584' stroke='#2563EB' stroke-width='1.8' marker-end='url(#arrHeadBlue)'/>
+<rect x='684' y='585' width='372' height='88' rx='12' fill='#EFF6FF' stroke='#BFDBFE' stroke-width='1.2' />
+<circle cx='714' cy='629.0' r='13' fill='#2563EB'/>
+<text x='714' y='633.5' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='700' font-style='normal' fill='#FFFFFF' text-anchor='middle'>4</text>
+<text x='740' y='613' font-family='Helvetica, Arial, sans-serif' font-size='12.8' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='start'>Replay Guard</text>
+<text x='740' y='632' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>|Δt| ≤ 300s   and   UNIQUE(device_id,</text>
+<text x='740' y='647' font-family='Helvetica, Arial, sans-serif' font-size='10.8' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>timestamp) rejects duplicate packets</text>
+<rect x='760.0' y='687' width='220' height='28' rx='14.0' fill='#DCFCE7' stroke='#86EFAC' stroke-width='1.2' />
+<text x='870.0' y='705.2' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='700' font-style='normal' fill='#166534' text-anchor='middle'>✓ 200 OK  →  row inserted</text>
+<rect x='1163' y='123' width='240' height='610' rx='18' fill='#0F172A' opacity='0.06'/>
+<rect x='1160' y='118' width='240' height='610' rx='18' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1.4' />
+<rect x='1182' y='136' width='196' height='6' rx='3' fill='#EA580C' />
+<path d='M1262.02,174.5904 A17.98,6.310400000000001 0 0 1 1297.98,174.5904 L1297.98,201.4096 A17.98,6.310400000000001 0 0 1 1262.02,201.4096 Z' fill='#FFFFFF' stroke='#EA580C' stroke-width='2.6'/>
+<ellipse cx='1280.0' cy='174.5904' rx='17.98' ry='6.310400000000001' fill='#FFFFFF' stroke='#EA580C' stroke-width='2.6'/>
+<path d='M1262.02,188 A17.98,6.310400000000001 0 0 0 1297.98,188' fill='none' stroke='#EA580C' stroke-width='1.6' opacity='0.5'/>
+<text x='1280.0' y='244' font-family='Helvetica, Arial, sans-serif' font-size='17.5' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>Persistence</text>
+<text x='1280.0' y='263' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='400' font-style='normal' fill='#64748B' text-anchor='middle'>SQLite  ·  volume-mounted</text>
+<line x1='1182' y1='280' x2='1378' y2='280' stroke='#E2E8F0' stroke-width='1.2'/>
+<rect x='1178' y='310' width='204' height='96' rx='10' fill='#FFF7ED' stroke='#FED7AA' stroke-width='1.2' />
+<text x='1190' y='332' font-family='Helvetica, Arial, sans-serif' font-size='12.5' font-weight='700' font-style='normal' fill='#9A3412' text-anchor='start'>devices</text>
+<line x1='1190' y1='340' x2='1370' y2='340' stroke='#FED7AA' stroke-width='1'/>
+<circle cx='1194' cy='354' r='2.2' fill='#EA580C'/>
+<text x='1202' y='358' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>device_id  (PK)</text>
+<circle cx='1194' cy='370' r='2.2' fill='#EA580C'/>
+<text x='1202' y='374' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>is_active  (0 / 1)</text>
+<rect x='1178' y='461' width='204' height='132' rx='10' fill='#FFF7ED' stroke='#FED7AA' stroke-width='1.2' />
+<text x='1190' y='483' font-family='Helvetica, Arial, sans-serif' font-size='12.5' font-weight='700' font-style='normal' fill='#9A3412' text-anchor='start'>sensor_data</text>
+<line x1='1190' y1='491' x2='1370' y2='491' stroke='#FED7AA' stroke-width='1'/>
+<circle cx='1194' cy='505' r='2.2' fill='#EA580C'/>
+<text x='1202' y='509' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>device_id  (FK)</text>
+<circle cx='1194' cy='521' r='2.2' fill='#EA580C'/>
+<text x='1202' y='525' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>temperature · humidity · pressure</text>
+<circle cx='1194' cy='537' r='2.2' fill='#EA580C'/>
+<text x='1202' y='541' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>timestamp · received_at</text>
+<circle cx='1194' cy='553' r='2.2' fill='#EA580C'/>
+<text x='1202' y='557' font-family='Helvetica, Arial, sans-serif' font-size='10.6' font-weight='400' font-style='normal' fill='#0F172A' text-anchor='start'>UNIQUE(device_id, timestamp)</text>
+<rect x='1178' y='648' width='204' height='64' rx='10' fill='#FFF7ED' stroke='#FED7AA' stroke-width='1.2' />
+<text x='1280.0' y='674.5' font-family='Helvetica, Arial, sans-serif' font-size='11.8' font-weight='700' font-style='normal' fill='#EA580C' text-anchor='middle'>Durable across</text>
+<text x='1280.0' y='693.5' font-family='Helvetica, Arial, sans-serif' font-size='11.8' font-weight='700' font-style='normal' fill='#EA580C' text-anchor='middle'>container rebuilds</text>
+<text x='340.0' y='382' font-family='Helvetica, Arial, sans-serif' font-size='8.8' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>POST /api/iot-data</text>
+<text x='340.0' y='395' font-family='Helvetica, Arial, sans-serif' font-size='9.4' font-weight='400' font-style='italic' fill='#64748B' text-anchor='middle'>{iv, ciphertext, tag}</text>
+<line x1='304' y1='420' x2='370' y2='420' stroke='#475569' stroke-width='2.2' marker-end='url(#arrHead)'/>
+<g fill='none' stroke='#64748B' stroke-width='2.4'><circle cx='328.24' cy='468.52' r='9.24'/><circle cx='340.0' cy='461.8' r='11.760000000000002'/><circle cx='352.6' cy='468.1' r='8.4'/><rect x='319.0' y='466.84' width='42.0' height='9.24' rx='4.62' fill='#64748B' stroke='none'/></g>
+<text x='340.0' y='498' font-family='Helvetica, Arial, sans-serif' font-size='9.3' font-weight='400' font-style='italic' fill='#64748B' text-anchor='middle'>public internet</text>
+<text x='620.0' y='382' font-family='Helvetica, Arial, sans-serif' font-size='9.2' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>127.0.0.1 : 9050</text>
+<text x='620.0' y='395' font-family='Helvetica, Arial, sans-serif' font-size='9.4' font-weight='400' font-style='italic' fill='#64748B' text-anchor='middle'>internal only</text>
+<line x1='584' y1='420' x2='650' y2='420' stroke='#475569' stroke-width='2.2' marker-end='url(#arrHead)'/>
+<text x='1120.0' y='382' font-family='Helvetica, Arial, sans-serif' font-size='9.2' font-weight='700' font-style='normal' fill='#0F172A' text-anchor='middle'>INSERT</text>
+<text x='1120.0' y='395' font-family='Helvetica, Arial, sans-serif' font-size='9.4' font-weight='400' font-style='italic' fill='#64748B' text-anchor='middle'>on success</text>
+<line x1='1084' y1='420' x2='1150' y2='420' stroke='#2563EB' stroke-width='2.2' marker-end='url(#arrHeadBlue)'/>
+<rect x='330' y='762' width='780' height='40' rx='10' fill='#F1F5F9' stroke='#E2E8F0' stroke-width='1' />
+<circle cx='365' cy='782' r='11' fill='#64748B'/>
+<circle cx='365' cy='775.5' r='1.7' fill='#FFFFFF'/>
+<line x1='365' y1='779.5' x2='365' y2='788' stroke='#FFFFFF' stroke-width='2.6' stroke-linecap='round'/>
+<text x='389' y='787' font-family='Helvetica, Arial, sans-serif' font-size='11.3' font-weight='400' font-style='normal' fill='#475569' text-anchor='start'>Read path — GET /api/iot-data (60 req/min) queries the same Application layer directly, returning recent sensor_data rows as JSON.</text>
+<rect x='405.09999999999997' y='823' width='14' height='14' rx='4' fill='#16A34A' />
+<text x='427.09999999999997' y='834' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='500' font-style='normal' fill='#475569' text-anchor='start'>Edge Device</text>
+<rect x='533.6999999999999' y='823' width='14' height='14' rx='4' fill='#64748B' />
+<text x='555.6999999999999' y='834' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='500' font-style='normal' fill='#475569' text-anchor='start'>Network</text>
+<rect x='635.8999999999999' y='823' width='14' height='14' rx='4' fill='#7C3AED' />
+<text x='657.8999999999999' y='834' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='500' font-style='normal' fill='#475569' text-anchor='start'>Reverse Proxy</text>
+<rect x='777.6999999999998' y='823' width='14' height='14' rx='4' fill='#2563EB' />
+<text x='799.6999999999998' y='834' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='500' font-style='normal' fill='#475569' text-anchor='start'>Application</text>
+<rect x='906.2999999999998' y='823' width='14' height='14' rx='4' fill='#EA580C' />
+<text x='928.2999999999998' y='834' font-family='Helvetica, Arial, sans-serif' font-size='11.5' font-weight='500' font-style='normal' fill='#475569' text-anchor='start'>Persistence</text>
+<text x='720.0' y='870' font-family='Helvetica, Arial, sans-serif' font-size='11' font-weight='400' font-style='italic' fill='#64748B' text-anchor='middle'>Figure 1 — Data flow and security checkpoints in the secure IoT telemetry pipeline.</text>
+</svg>

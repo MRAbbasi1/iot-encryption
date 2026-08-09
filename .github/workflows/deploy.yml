@@ -1,0 +1,33 @@
+name: Deploy IoT Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script_stop: true
+          script: |
+            cd /root/iot-encryption
+            git fetch origin main
+            git reset --hard origin/main
+            cd iot-backend
+            docker build --no-cache -t iot-backend-api .
+            docker stop iot-app || true
+            docker rm iot-app || true
+            docker run -d \
+            --name iot-app \
+            --restart unless-stopped \
+            -p 127.0.0.1:9050:9050 \
+            -v /root/iot-encryption/iot-backend/data:/app/data \
+            --env-file /root/iot-encryption/iot-backend/.env \
+            iot-backend-api

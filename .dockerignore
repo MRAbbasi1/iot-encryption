@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+.envrc
+env.h
+
+# Data (SQLite database)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# CI
+.github/
